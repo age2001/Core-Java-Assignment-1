@@ -2,7 +2,7 @@ package Day8;
 
 import java.util.Scanner;
 
-class NumAverage {
+class Average {
     private double num1, num2, num3;
     final private Scanner scan = new Scanner(System.in);
 
@@ -25,7 +25,7 @@ class NumAverage {
 
 public class Exercise3 {
     public static void main(String[] args) {
-        NumAverage avg = new NumAverage();
+        Average avg = new Average();
         avg.getUserNumbers();
         avg.printNumberAverage();
     }
