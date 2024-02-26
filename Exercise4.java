@@ -5,7 +5,7 @@ abstract class Marks {
 }
 
 class A extends Marks {
-    public double subject1, subject2, subject3;
+    public int subject1, subject2, subject3;
     public A (int subject1, int subject2, int subject3) {
         this.subject1 = subject1;
         this.subject2 = subject2;
@@ -13,14 +13,12 @@ class A extends Marks {
     }
     @Override
     public void getPercentage() {
-        // Type casting to int to remove decimals
-        System.out.println("Total Percentage of marks: " + (int) (100 * (subject1 + subject2 + subject3) / 300) + "%");
+        System.out.println("Total Percentage of marks: " + (100 * (subject1 + subject2 + subject3) / 300) + "%");
     }
 }
 
 class B extends Marks {
-    public double subject1, subject2, subject3, subject4;
-
+    public int subject1, subject2, subject3, subject4;
     public B(int subject1, int subject2, int subject3, int subject4) {
         this.subject1 = subject1;
         this.subject2 = subject2;
@@ -30,8 +28,7 @@ class B extends Marks {
 
     @Override
     public void getPercentage() {
-        // Type casting to int to remove decimals
-        System.out.println("Total Percentage of marks: " + (int) (100 * (subject1 + subject2 + subject3 + subject4) / 400) + "%");
+        System.out.println("Total Percentage of marks: " + (100 * (subject1 + subject2 + subject3 + subject4) / 400) + "%");
     }
 }
 
